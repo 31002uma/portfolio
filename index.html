@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="ポートフォリオサイトです。">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav-menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#profile">PROFILE</a></li>
+          <li class="menu-item"><a href="#skills">SKILLS</a></li>
+          <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+          <li class="menu-item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <div class="fv">
+        <div class="site-title">
+          <h1>PORTFOLIO</h1>
+          <h2>Web Engineer</h2>
+        </div>
+      </div>
+
+      <section id="profile">
+        <div class="wrapper">
+          <div class="sec-title">
+            <div class="sec-title-ja">プロフィール</div>
+            <div class="sec-title-en">Profile</div>
+          </div>
+          <div class="profile-content">
+            <div class="profile-img"><img src="img/face.jpg" alt=""></div>
+            <div class="profile-text">
+              <ul class="profile-list">
+                <li>名前：佐藤楓真</li>
+                <li>年齢：19歳</li>
+                <li>出身：山形県</li>
+                <li>学歴：山形大学工学部 在学</li>
+              </ul>
+              <p>
+                迅速丁寧な対応でご希望に寄り添い提案し、Web制作を通して目標を達成するためのお手伝いいたします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrapper">
+          <div class="sec-title">
+            <div class="sec-title-ja">スキル</div>
+            <div class="sec-title-en">Skills</div>
+          </div>
+          <div class="skills-list">
+            <div class="skills-item">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skills-item">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skills-item">
+              <i class="fab fa-js-square"></i>
+              <p>jQuery</p>
+            </div>
+            <div class="skills-item">
+              <i class="fab fa-wordpress"></i>
+              <p>WordPress</p>
+            </div>
+          </div>
+          <p class="skills-text">
+            LPサイトやコーポレートサイトなどのWebサイトを制作いたします。jQueryを用いてフェードインやハンバーガーメニューなどの動きを出せます。レスポンシブデザイン、 WordPress化対応しています。
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="wrapper">
+          <div class="sec-title">
+            <div class="sec-title-ja">制作実績</div>
+            <div class="sec-title-en">Portfolio</div>
+          </div>
+          <div class="portfolio-list">
+            <div class="portfolio-item inview fadein">
+              <a href="index.html" target="_brank">
+                <img src="img/portfolio1.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">オリジナルサイト</div>
+                  <div class="portfolio-title">ポートフォリオ</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">オリジナルサイト</div>
+              <div class="portfolio-title-sp">ポートフォリオ</div>
+            </div>
+            <div class="portfolio-item inview fadein">
+              <a href="fa-exhibition/index.html" target="_brank">
+                <img src="img/portfolio2.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">模写作品</div>
+                  <div class="portfolio-title">FA EXHIBITION</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">模写作品</div>
+              <div class="portfolio-title-sp">FA EXHIBITION</div>
+            </div>
+            <div class="portfolio-item inview fadein">
+              <a href="pon-design/index.html" target="_brank">
+                <img src="img/portfolio3.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">模写作品</div>
+                  <div class="portfolio-title">PON DESIGN</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">模写作品</div>
+              <div class="portfolio-title-sp">PON DESIGN</div>              
+            </div>
+            <div class="portfolio-item inview fadein">
+              <a href="digsmile/index.html" target="_brank">
+                <img src="img/portfolio4.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">模写作品</div>
+                  <div class="portfolio-title">DIGSMILE</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">模写作品</div>
+              <div class="portfolio-title-sp">DIGSMILE</div>              
+            </div>
+            <div class="portfolio-item inview fadein">
+              <a href="sneakers/index.html" target="_brank">
+                <img src="img/portfolio5.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">模写作品</div>
+                  <div class="portfolio-title">Sneakers</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">模写作品</div>
+              <div class="portfolio-title-sp">Sneakers</div>              
+            </div>
+            <div class="portfolio-item inview fadein">
+              <a href="furniture-design/index.html" target="_brank">
+                <img src="img/portfolio6.png" alt="">
+                <div class="mask">
+                  <div class="portfolio-category">模写作品</div>
+                  <div class="portfolio-title">Furniture Design</div>
+                </div>
+              </a>
+              <div class="portfolio-category-sp">模写作品</div>
+              <div class="portfolio-title-sp">Furniture Design</div>              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-wrapper">
+          <div class="sec-title">
+            <div class="sec-title-ja">お問い合わせ</div>
+            <div class="sec-title-en">Contact</div>
+          </div>
+          <p class="contact-text">
+            制作のご依頼・ご相談などお気軽にご連絡ください。
+          </p>
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdEuGNwUDHWe1ojSyc6wReLX7fYpLS8nv0rqYWiEpH2c8Vlog/formResponse">
+            <ul class="form-list">
+              <li class="form-item">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="entry.488053086">
+              </li>
+              <li class="form-item">
+                <label for="email">メールアドレス</label>
+                <input type="text" id="email" name="entry.1314381414">
+              </li>
+              <li class="form-item">
+                <label for="message">お問い合わせ内容</label>
+                <textarea name="entry.616292890" id="message" cols="30" rows="5"></textarea>
+              </li>
+            </ul>
+            <input type="submit" value="送信" class="form-btn">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="wrapper">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item"><a href="#">TOP</a></li>
+            <li class="footer-nav-item"><a href="#profile">PROFILE</a></li>
+            <li class="footer-nav-item"><a href="#skills">SKILLS</a></li>
+            <li class="footer-nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="footer-nav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">&copy; 2021 Fuma Sato All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
