@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.site-title a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+
+.page-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#navi {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+#navi a {
+  color: #fff;
+}
+
+#navi li {
+  margin-bottom: 14px;
+}
+
+.open #navi {
+  left: 0;
+  opacity: 1;
+}
+
+.toggle_btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 10px;
+}
+
+.toggle_btn span:nth-child(2) {
+  bottom: 10px;
+}
+
+.open .toggle_btn span {
+  background: #fff;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+#mask {
+  display: none;
+  transition: all 0.5s;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.product-list img {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.product-list p {
+  font-size: 0.75rem;
+}
+
+.link-text {
+  text-align: center;
+  display: block;
+}
+
+.pagenation {
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation li {
+  padding: 0 20px;
+}
+
+.item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.item .item-img {
+  width: 50%;
+}
+
+.item .item-text {
+  width: 42%;
+}
+
+.item .item-text p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.item .item-text dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item .item-text dt {
+  width: 30%;
+}
+
+.item .item-text dd {
+  width: 70%;
+}
+
+#about {
+  max-width: 600px;
+}
+
+#about p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+#company {
+  max-width: 600px;
+}
+
+#company ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#company dt {
+  width: 30%;
+  border-bottom: 1px solid #dcdbdb;
+  padding: 20px 10px;
+}
+
+#company dt:last-of-type {
+  border-bottom: none;
+}
+
+#company dd {
+  width: 70%;
+  border-bottom: 1px solid #dcdbdb;
+  padding: 20px 10px;
+}
+
+#company dd:last-of-type {
+  border-bottom: none;
+}
+
+#company .map {
+  filter: grayscale(1);
+}
+
+#company .map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+footer .menu {
+  display: flex;
+}
+
+footer .menu li {
+  font-size: 0.75rem;
+  margin-right: 30px;
+}
+
+footer .copyright {
+  font-size: 0.625rem;
+}
+
+@media screen and (max-width: 900px) {
+  .product-list li {
+    width: 47%;
+  }
+  
+  .item {
+    flex-direction: column;
+  }
+
+  .item .item-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .item .item-text {
+    width: 100%;
+  }
+
+  #company dl {
+    flex-direction: column;
+  }
+
+  #company dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+
+  #company dd {
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .menu {
+    margin-bottom: 5px;
+  }
+}
